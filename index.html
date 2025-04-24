@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>marcimetzger</title>
+
+    <!-- Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/menu.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/socialbanner.css" />
+    <link rel="stylesheet" href="./assets/css/services.css" />
+    <link rel="stylesheet" href="./assets/css/search.css" />
+
+    <!-- Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER / MENU -->
+    <div class="heading">
+      <div class="menu">
+        <div class="logo"><img src="./assets/img/logo.webp" alt="logo" /></div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <div class="menu-items" id="menu-items">
+          <div class="menu-item">HOME</div>
+          <div class="menu-item">LISTINGS</div>
+          <div class="menu-item">LET'S MOVE</div>
+          <div class="menu-item">ABOUT US</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-container">
+      <div class="sidebar">
+        <div class="hero">
+          <h1
+            style="font-weight: 600"
+            data-aos="fade-right"
+            data-aos-delay="150"
+          >
+            <span style="font-weight: 200; color: black">MARCI</span>
+            <span> METZGER</span>
+          </h1>
+          <p data-aos="fade-right" data-aos-delay="200">
+            THE RIDGE REALTY GROUP
+          </p>
+          <h3
+            style="font-size: 2.6em; color: rgb(77, 77, 77)"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
+            Pahrump Realtor
+          </h3>
+
+          <button class="learn-more" data-aos="fade-right" data-aos-delay="400">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Learn More</span>
+          </button>
+        </div>
+      </div>
+      <div class="content">
+        <div class="image-section" id="imageSection">
+          <div class="image-container" data-index="0">
+            <div class="inner-wrapper">
+              <img
+                src="./assets/img/image1.png"
+                alt="Modern kitchen with black fixtures"
+              />
+              <div class="image-overlay">
+                <div class="image-number">01</div>
+                <div class="image-title">Bacchus</div>
+                <div class="image-subtitle">kitchen</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="image-container" data-index="1">
+            <img
+              src="./assets/img/image2.webp"
+              alt="Modern hallway with glass doors"
+            />
+            <div class="image-overlay">
+              <div class="image-number">02</div>
+              <div class="image-title">Tellus</div>
+              <div class="image-subtitle">doors</div>
+            </div>
+          </div>
+          <div class="image-container" data-index="2">
+            <img
+              src="./assets/img/image3.webp"
+              alt="Modern windows with natural light"
+            />
+            <div class="image-overlay">
+              <div class="image-number">03</div>
+              <div class="image-title">Hélios</div>
+              <div class="image-subtitle">windows</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services -->
+    <section class="container hero" style="margin-bottom: 5rem">
+      <div class="hero-text">
+        <span
+          style="font-weight: 600; font-size: 1.2em"
+          data-aos="fade-right"
+          data-aos-delay="500"
+          >Find
+        </span>
+        <h2 data-aos="fade-right" data-aos-delay="500">
+          Your | <span>Dream House</span>
+        </h2>
+        <p data-aos="fade-right" data-aos-delay="600">
+          Discover a seamless way to find, buy, or invest in your perfect home.
+          From modern apartments to luxurious villas, we turn your real estate
+          dreams into reality.
+        </p>
+      </div>
+      <img
+        src="./assets/img/pexels-expect-best-79873-323772-AnyEraser.png"
+        alt="Doctor"
+        data-aos="fade-left"
+        data-aos-delay="500"
+      />
+    </section>
+
+    <!-- search container -->
+    <!-- SEARCH FORM -->
+    <h1
+      style="color: #0066ff; margin-bottom: 50px; text-align: center"
+      data-aos="fade-up"
+      data-aos-delay="500"
+    >
+      Search listings
+    </h1>
+    <div class="search-container" data-aos="fade-up" data-aos-delay="500">
+      <form>
+        <div class="form-grid">
+          <div>
+            <label for="location">Location</label>
+            <select id="location" name="location">
+              <option value="">Select Location</option>
+            </select>
+          </div>
+          <div>
+            <label for="type">Type</label>
+            <select id="type" name="type">
+              <option value="">Select Type</option>
+            </select>
+          </div>
+          <div>
+            <label for="sort">Sort By</label>
+            <select id="sort" name="sort">
+              <option value="">Select Sorting</option>
+            </select>
+          </div>
+          <div>
+            <label for="bedrooms">Bedrooms</label>
+            <select id="bedrooms" name="bedrooms">
+              <option value="">Any Number</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-grid row-2">
+          <div>
+            <label for="baths">Baths</label>
+            <select id="baths" name="baths">
+              <option value="">Any Number</option>
+            </select>
+          </div>
+          <div>
+            <label for="min-price">Min Price</label>
+            <input
+              type="text"
+              id="min-price"
+              name="min-price"
+              placeholder="$0"
+            />
+          </div>
+          <div>
+            <label for="max-price">Max Price</label>
+            <input
+              type="text"
+              id="max-price"
+              name="max-price"
+              placeholder="$1000000"
+            />
+          </div>
+        </div>
+
+        <div class="button-container">
+          <button type="submit" class="search-button">Search Now</button>
+        </div>
+      </form>
+    </div>
+
+    <section class="container">
+      <div class="stats" data-aos="fade-up" data-aos-delay="500">
+        <div class="stat">
+          <h3>90</h3>
+          <p>Clients in 2021</p>
+        </div>
+        <div class="stat">
+          <h3>28.5M+</h3>
+          <p>million in sales!</p>
+        </div>
+        <div class="stat">
+          <h3>Top</h3>
+          <p>Residential Sales Last 5 Years</p>
+        </div>
+      </div>
+
+      <div class="section-title">
+        <h2>We offer a wide range of services</h2>
+        <p>
+          Our services are designed to provide the best healthcare solutions
+          with professionalism and care.
+        </p>
+      </div>
+
+      <div class="grid-section">
+        <div class="grid-image" data-aos="fade-right" data-aos-delay="500">
+          <img src="./assets/img/res1.webp" alt="Health Chart" />
+        </div>
+        <div class="grid-text">
+          <h3 style="color: #0066ff">Health Trend Chart</h3>
+          <p>
+            We analyze your health progress and give you insights to improve.
+            Our tools help you visualize your well-being over time.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-section reverse">
+        <div class="grid-image" data-aos="fade-left" data-aos-delay="600">
+          <img src="./assets/img/res2.webp" alt="Health Chart" />
+        </div>
+        <div class="grid-text">
+          <h3 style="color: #0066ff">Health Trend Chart</h3>
+          <p>
+            We analyze your health progress and give you insights to improve.
+            Our tools help you visualize your well-being over time.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-section">
+        <div class="grid-image" data-aos="fade-right" data-aos-delay="700">
+          <img src="./assets/img/res3.webp" alt="Health Chart" />
+        </div>
+        <div class="grid-text">
+          <h3 style="color: #0066ff">Health Trend Chart</h3>
+          <p>
+            We analyze your health progress and give you insights to improve.
+            Our tools help you visualize your well-being over time.
+          </p>
+        </div>
+      </div>
+
+      <!-- get it sold -->
+      <h1
+        style="
+          color: #080808;
+          margin-bottom: 10px;
+          font-size: 2.3em;
+          text-align: center;
+        "
+      >
+        get it sold
+      </h1>
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="./assets/img/realstate2.webp" alt="rlt2" class="card-img" />
+          <h3>Real Estate Done Right</h3>
+          <p>
+            Nervous about your property adventure? Don’t be. Whether you're
+            getting ready to buy or sell your residence, looking at investment
+            properties, or just curious about the markets, our team ensures you
+            get the best experience possible!
+          </p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <img
+            src="./assets/img/realstate1.webp"
+            alt="rlst1"
+            class="card-img"
+          />
+          <h3>Commercial & Residential</h3>
+          <p>
+            Large or small, condo or mansion, we can find it and get at the
+            price that's right. Fixer-uppers? Luxury? We can help with all of
+            it! We live, work, and play in this community. Happy to help you
+            find where to put you hard-earned dollars.
+          </p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <img
+            src="./assets/img/image2.webp"
+            alt="Preventive"
+            class="card-img"
+          />
+          <h3>Rely on Expertise</h3>
+          <p>
+            If you have questions about affordability, credit, and loan options,
+            trust us to connect you with the right people to get the answers you
+            need in a timely fashion. We make sure you feel confident and
+            educated every step of the way.
+          </p>
+        </div>
+      </div>
+
+      <div class="cta-section">
+        <div class="cta-text">
+          <h3>The services are designed to provide progress to your health.</h3>
+          <p>
+            Book a consultation or explore our service packages to start your
+            health journey.
+          </p>
+          <a href="#">Book Now</a>
+        </div>
+        <img src="./assets/img/realty.jpg" alt="realty" />
+      </div>
+    </section>
+
+    <!-- socials -->
+    <section class="socials-section">
+      <div class="social-iconss">
+        <a
+          href="https://facebook.com"
+          class="social-media facebook"
+          title="Facebook"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M22 12a10 10 0 10-11.63 9.87v-6.99H8.18v-2.88h2.19V9.41c0-2.17 1.3-3.37 3.28-3.37.95 0 1.94.17 1.94.17v2.13h-1.09c-1.07 0-1.41.66-1.41 1.34v1.61h2.39l-.38 2.88h-2.01v6.99A10 10 0 0022 12z"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="https://yelp.com"
+          class="social-media yelp"
+          title="Yelp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M9.9 2.7c.2-.6.9-.9 1.5-.6l1.6.7c.6.3.9 1 .6 1.6l-1.8 4.2c-.2.4-.5.7-.9.8l-.7.1L9.9 2.7zM3.5 9.3c-.5-.3-.7-1-.3-1.5l.9-1.4c.3-.5 1-.6 1.5-.3l4.2 2.5c.4.3.7.7.7 1.2l.1.7-6.4-1.2zm1.7 8.1c-.6-.2-.9-.9-.6-1.5l.8-1.5c.3-.5.9-.7 1.5-.4l3.8 2.6c.4.3.6.7.6 1.2l-.1.7-5.9-1.1zm6.8 3.9c-.6-.2-1-.8-.8-1.4l.6-1.6c.2-.6.9-.9 1.5-.7l4.4 1.3c.6.2.9.9.7 1.5l-.6 1.6c-.2.6-.9.9-1.5.7l-4.3-1.4zm9.2-6.5c.5.4.6 1.1.1 1.6l-1.1 1.1c-.4.4-1 .5-1.5.2l-4-2.6c-.4-.3-.7-.7-.7-1.2l-.1-.7 6.5 1.6z"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="https://instagram.com"
+          class="social-media instagram"
+          title="Instagram"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2.2c3.2 0 3.584.01 4.85.07 1.17.06 1.97.25 2.43.42.59.23 1 .51 1.45.96.45.45.73.86.96 1.45.17.46.36 1.26.42 2.43.06 1.26.07 1.65.07 4.85s-.01 3.584-.07 4.85c-.06 1.17-.25 1.97-.42 2.43a4.125 4.125 0 01-.96 1.45 4.125 4.125 0 01-1.45.96c-.46.17-1.26.36-2.43.42-1.26.06-1.65.07-4.85.07s-3.584-.01-4.85-.07c-1.17-.06-1.97-.25-2.43-.42a4.125 4.125 0 01-1.45-.96 4.125 4.125 0 01-.96-1.45c-.17-.46-.36-1.26-.42-2.43-.06-1.26-.07-1.65-.07-4.85s.01-3.584.07-4.85c.06-1.17.25-1.97.42-2.43.23-.59.51-1 .96-1.45.45-.45.86-.73 1.45-.96.46-.17 1.26-.36 2.43-.42 1.26-.06 1.65-.07 4.85-.07m0-2.2c-3.27 0-3.68.01-4.96.07-1.27.06-2.14.27-2.9.58a6.31 6.31 0 00-2.29 1.5 6.31 6.31 0 00-1.5 2.29c-.31.76-.52 1.63-.58 2.9-.06 1.28-.07 1.69-.07 4.96s.01 3.68.07 4.96c.06 1.27.27 2.14.58 2.9a6.31 6.31 0 001.5 2.29 6.31 6.31 0 002.29 1.5c.76.31 1.63.52 2.9.58 1.28.06 1.69.07 4.96.07s3.68-.01 4.96-.07c1.27-.06 2.14-.27 2.9-.58a6.31 6.31 0 002.29-1.5 6.31 6.31 0 001.5-2.29c.31-.76.52-1.63.58-2.9.06-1.28.07-1.69.07-4.96s-.01-3.68-.07-4.96c-.06-1.27-.27-2.14-.58-2.9a6.31 6.31 0 00-1.5-2.29 6.31 6.31 0 00-2.29-1.5c-.76-.31-1.63-.52-2.9-.58-1.28-.06-1.69-.07-4.96-.07zM12 5.8a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zm0 10.2a4 4 0 110-8 4 4 0 010 8zm6.4-11.6a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="https://linkedin.com"
+          class="social-media linkedin"
+          title="LinkedIn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.25c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 11.25h-3v-5.5c0-1.38-1.12-2.5-2.5-2.5s-2.5 1.12-2.5 2.5v5.5h-3v-10h3v1.4c.69-.89 1.76-1.4 2.88-1.4 2.21 0 4 1.79 4 4v6z"
+            />
+          </svg>
+        </a>
+      </div>
+    </section>
+    <!-- contact us -->
+    <div class="contact-hero">
+      <h1 style="color: black">call or visit</h1>
+      <p style="color: black">Marci Metzger - THE RIDGE REALTY GROUP</p>
+    </div>
+
+    <div class="contact-wrapper">
+      <div class="contact-left">
+        <h2 style="font-size: 2em">Get in touch</h2>
+
+        <div class="contact-info">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <strong>Address</strong>
+            3190 HW-160, Suite F, Pahrump, Nevada 89048, United States
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <i class="fas fa-phone"></i>
+          <div>
+            <strong>Call Us</strong>
+            Phone: (206) 919-6886
+          </div>
+        </div>
+
+        <div class="social-icons">
+          <a
+            href="https://wa.me/12069196886"
+            class="whatsapp-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-whatsapp"></i>
+            Message us on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <h2>Send us a message</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Company" />
+          <input type="tel" placeholder="Phone" />
+          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="Subject" />
+          <textarea placeholder="Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h2>MyBrand</h2>
+          <p>Creating impact through design.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer-hours">
+          <h4>Office Hours</h4>
+          <p><strong>Open Today:</strong> 8:00 AM – 7:00 PM</p>
+          <p style="margin-bottom: 10px">
+            <strong>Open Daily:</strong> 8:00 AM – 7:00 PM
+          </p>
+          <p style="max-width: 300px; font-size: 0.8em; font-weight: 900">
+            Appointments outside office hours available upon request. Just call!
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 MyBrand. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(); // Initialize AOS
+    </script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

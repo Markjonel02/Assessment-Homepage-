@@ -1,0 +1,47 @@
+
+.heading {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white; /* Adjust background for visibility */
+  z-index: 1000; /* Ensures it stays above other elements */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
+  top:0;
+  z-index: 10;
+}
+
+.menu-items {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: black;
+}
+
+.menu-item {
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.heading .logo{
+  width: 120px;
+  height: auto;
+  filter: invert();
+}
