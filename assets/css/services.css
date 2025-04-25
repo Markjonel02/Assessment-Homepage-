@@ -62,7 +62,7 @@
 .stats {
   display: flex;
   justify-content: center;
-  background-color:aliceblue;
+  background-color: aliceblue;
   gap: 3rem;
   padding: 2rem;
   border-radius: 15px;
@@ -171,7 +171,7 @@
   object-fit: cover;
   margin-bottom: 1rem;
   border-radius: 12px;
- 
+
   display: block;
 }
 
@@ -218,7 +218,7 @@
 .cta-section img {
   max-width: 350px;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 50%;
 }
 
 @media (max-width: 768px) {

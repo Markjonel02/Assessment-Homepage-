@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/menu.css" />
@@ -20,6 +24,7 @@
     <link rel="stylesheet" href="./assets/css/socialbanner.css" />
     <link rel="stylesheet" href="./assets/css/services.css" />
     <link rel="stylesheet" href="./assets/css/search.css" />
+    <link rel="stylesheet" href="./assets/css/photogallery.css" />
 
     <!-- Font Awesome CDN for icons -->
     <link
@@ -45,19 +50,20 @@
     <div class="site-container">
       <div class="sidebar">
         <div class="hero">
+          <img src="./assets/img/Untitled design.svg" alt="" />
           <h1
             style="font-weight: 600"
             data-aos="fade-right"
             data-aos-delay="150"
           >
-            <span style="font-weight: 200; color: black">MARCI</span>
+            <span style="font-weight: 200">MARCI</span>
             <span> METZGER</span>
           </h1>
           <p data-aos="fade-right" data-aos-delay="200">
             THE RIDGE REALTY GROUP
           </p>
           <h3
-            style="font-size: 2.6em; color: rgb(77, 77, 77)"
+            style="font-size: 2.6em; color: #0066ff"
             data-aos="fade-right"
             data-aos-delay="300"
           >
@@ -113,103 +119,6 @@
         </div>
       </div>
     </div>
-    <!-- services -->
-    <section class="container hero" style="margin-bottom: 5rem">
-      <div class="hero-text">
-        <span
-          style="font-weight: 600; font-size: 1.2em"
-          data-aos="fade-right"
-          data-aos-delay="500"
-          >Find
-        </span>
-        <h2 data-aos="fade-right" data-aos-delay="500">
-          Your | <span>Dream House</span>
-        </h2>
-        <p data-aos="fade-right" data-aos-delay="600">
-          Discover a seamless way to find, buy, or invest in your perfect home.
-          From modern apartments to luxurious villas, we turn your real estate
-          dreams into reality.
-        </p>
-      </div>
-      <img
-        src="./assets/img/pexels-expect-best-79873-323772-AnyEraser.png"
-        alt="Doctor"
-        data-aos="fade-left"
-        data-aos-delay="500"
-      />
-    </section>
-
-    <!-- search container -->
-    <!-- SEARCH FORM -->
-    <h1
-      style="color: #0066ff; margin-bottom: 50px; text-align: center"
-      data-aos="fade-up"
-      data-aos-delay="500"
-    >
-      Search listings
-    </h1>
-    <div class="search-container" data-aos="fade-up" data-aos-delay="500">
-      <form>
-        <div class="form-grid">
-          <div>
-            <label for="location">Location</label>
-            <select id="location" name="location">
-              <option value="">Select Location</option>
-            </select>
-          </div>
-          <div>
-            <label for="type">Type</label>
-            <select id="type" name="type">
-              <option value="">Select Type</option>
-            </select>
-          </div>
-          <div>
-            <label for="sort">Sort By</label>
-            <select id="sort" name="sort">
-              <option value="">Select Sorting</option>
-            </select>
-          </div>
-          <div>
-            <label for="bedrooms">Bedrooms</label>
-            <select id="bedrooms" name="bedrooms">
-              <option value="">Any Number</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="form-grid row-2">
-          <div>
-            <label for="baths">Baths</label>
-            <select id="baths" name="baths">
-              <option value="">Any Number</option>
-            </select>
-          </div>
-          <div>
-            <label for="min-price">Min Price</label>
-            <input
-              type="text"
-              id="min-price"
-              name="min-price"
-              placeholder="$0"
-            />
-          </div>
-          <div>
-            <label for="max-price">Max Price</label>
-            <input
-              type="text"
-              id="max-price"
-              name="max-price"
-              placeholder="$1000000"
-            />
-          </div>
-        </div>
-
-        <div class="button-container">
-          <button type="submit" class="search-button">Search Now</button>
-        </div>
-      </form>
-    </div>
-
     <section class="container">
       <div class="stats" data-aos="fade-up" data-aos-delay="500">
         <div class="stat">
@@ -226,64 +135,15 @@
         </div>
       </div>
 
-      <div class="section-title">
+      <div class="section-title" data-aos="fade-up" data-aos-delay="200">
         <h2>We offer a wide range of services</h2>
         <p>
-          Our services are designed to provide the best healthcare solutions
-          with professionalism and care.
+          Marci Metzger, a Pahrump realtor with nearly 30 years of experience,
+          helps clients buy, sell, and invest in properties through The Ridge
+          Realty Group.
         </p>
       </div>
 
-      <div class="grid-section">
-        <div class="grid-image" data-aos="fade-right" data-aos-delay="500">
-          <img src="./assets/img/res1.webp" alt="Health Chart" />
-        </div>
-        <div class="grid-text">
-          <h3 style="color: #0066ff">Health Trend Chart</h3>
-          <p>
-            We analyze your health progress and give you insights to improve.
-            Our tools help you visualize your well-being over time.
-          </p>
-        </div>
-      </div>
-
-      <div class="grid-section reverse">
-        <div class="grid-image" data-aos="fade-left" data-aos-delay="600">
-          <img src="./assets/img/res2.webp" alt="Health Chart" />
-        </div>
-        <div class="grid-text">
-          <h3 style="color: #0066ff">Health Trend Chart</h3>
-          <p>
-            We analyze your health progress and give you insights to improve.
-            Our tools help you visualize your well-being over time.
-          </p>
-        </div>
-      </div>
-
-      <div class="grid-section">
-        <div class="grid-image" data-aos="fade-right" data-aos-delay="700">
-          <img src="./assets/img/res3.webp" alt="Health Chart" />
-        </div>
-        <div class="grid-text">
-          <h3 style="color: #0066ff">Health Trend Chart</h3>
-          <p>
-            We analyze your health progress and give you insights to improve.
-            Our tools help you visualize your well-being over time.
-          </p>
-        </div>
-      </div>
-
-      <!-- get it sold -->
-      <h1
-        style="
-          color: #080808;
-          margin-bottom: 10px;
-          font-size: 2.3em;
-          text-align: center;
-        "
-      >
-        get it sold
-      </h1>
       <div class="services-grid">
         <div class="service-card" data-aos="fade-up" data-aos-delay="200">
           <img src="./assets/img/realstate2.webp" alt="rlt2" class="card-img" />
@@ -325,18 +185,241 @@
         </div>
       </div>
 
-      <div class="cta-section">
-        <div class="cta-text">
-          <h3>The services are designed to provide progress to your health.</h3>
-          <p>
-            Book a consultation or explore our service packages to start your
-            health journey.
-          </p>
-          <a href="#">Book Now</a>
+      <h1
+        style="
+          color: #080808;
+          margin: 100px 0;
+          font-size: 2.3em;
+          text-align: center;
+        "
+      >
+        get it sold
+      </h1>
+      <div class="grid-section">
+        <div class="grid-image" data-aos="fade-right" data-aos-delay="500">
+          <img src="./assets/img/res1.webp" alt="Health Chart" />
         </div>
-        <img src="./assets/img/realty.jpg" alt="realty" />
+
+        <div class="grid-text">
+          <h3 style="color: #0066ff">Top Residential Sales Last 5 Years</h3>
+          <p>
+            We helped nearly 90 clients in 2021, and closed 28.5 million in
+            sales! Our team works hard everyday to grow and learn, so that we
+            may continue to excel in our market. Our clients deserve our best, &
+            we want to make sure our best is better every year.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-section reverse">
+        <div class="grid-image" data-aos="fade-left" data-aos-delay="600">
+          <img src="./assets/img/res2.webp" alt="Health Chart" />
+        </div>
+        <div class="grid-text">
+          <h3 style="color: #0066ff">Don't Just List it...</h3>
+          <p>
+            Get it SOLD! We exhaust every avenue to ensure our listings are at
+            the fingertips of every possible buyer, getting you top dollar for
+            your home.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-section">
+        <div class="grid-image" data-aos="fade-right" data-aos-delay="700">
+          <img src="./assets/img/res3.webp" alt="Health Chart" />
+        </div>
+        <div class="grid-text">
+          <h3 style="color: #0066ff">Guide to Buyers</h3>
+          <p>
+            Nobody knows the market like we do. Enjoy having a pro at your
+            service. Market analysis, upgrades lists, contractors on speed dial,
+            & more!
+          </p>
+        </div>
+      </div>
+
+      <!-- get it sold -->
+
+      <div
+        class="cta-section"
+        style="
+          background-color: #f0f8ffff;
+          padding: 20px 50px;
+          border-radius: 20px;
+        "
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div class="cta-text">
+          <h1 style="font-weight: bold; font-size: 3em">MARCI METZGER</h1>
+          <p>REALTOR FOR NEARLY 3 DECADES!</p>
+          <a href="tel:206-919-6886">Call now</a>
+        </div>
+        <img src="./assets/img/owner.webp" alt="realty" />
       </div>
     </section>
+
+    <!-- SEARCH FORM -->
+    <h1
+      style="color: #0066ff; margin-bottom: 50px; text-align: center"
+      data-aos="fade-up"
+      data-aos-delay="500"
+    >
+      Search listings
+    </h1>
+    <div class="bg">
+      <div class="search-container" data-aos="fade-up" data-aos-delay="500">
+        <form>
+          <div class="form-grid">
+            <div>
+              <label for="location">Location</label>
+              <select id="location" name="location">
+                <option value="">Select Location</option>
+              </select>
+            </div>
+            <div>
+              <label for="type">Type</label>
+              <select id="type" name="type">
+                <option value="">Select Type</option>
+              </select>
+            </div>
+            <div>
+              <label for="sort">Sort By</label>
+              <select id="sort" name="sort">
+                <option value="">Select Sorting</option>
+              </select>
+            </div>
+            <div>
+              <label for="bedrooms">Bedrooms</label>
+              <select id="bedrooms" name="bedrooms">
+                <option value="">Any Number</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-grid row-2">
+            <div>
+              <label for="baths">Baths</label>
+              <select id="baths" name="baths">
+                <option value="">Any Number</option>
+              </select>
+            </div>
+            <div>
+              <label for="min-price">Min Price</label>
+              <input
+                type="text"
+                id="min-price"
+                name="min-price"
+                placeholder="$0"
+              />
+            </div>
+            <div>
+              <label for="max-price">Max Price</label>
+              <input
+                type="text"
+                id="max-price"
+                name="max-price"
+                placeholder="$1000000"
+              />
+            </div>
+          </div>
+
+          <div class="button-container">
+            <button type="submit" class="search-button">Search Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Phptogalley -->
+    <div class="swiper mySwiper">
+      <h1 data-aos="fade-up" data-aos-delay="250">Photo Gallery</h1>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="./assets/img/image1.png"
+            alt="Modern kitchen with black fixtures"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          />
+          <div class="image-overlay">
+            <div class="image-number">01</div>
+            <div class="image-title">Bacchus</div>
+            <div class="image-subtitle">kitchen</div>
+          </div>
+        </div>
+        <div class="swiper-slide" data-aos="fade-left" data-aos-delay="400">
+          <img
+            src="./assets/img/image2.webp"
+            alt="Modern kitchen with black fixtures"
+          />
+          <div class="image-overlay">
+            <div class="image-number">02</div>
+            <div class="image-title">Bacchus</div>
+            <div class="image-subtitle">kitchen</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./assets/img/image3.webp"
+            alt="Modern kitchen with black fixtures"
+          />
+          <div class="image-overlay">
+            <div class="image-number">03</div>
+            <div class="image-title">Bacchus</div>
+            <div class="image-subtitle">kitchen</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./assets/img/image4.webp"
+            alt="Modern hallway with glass doors"
+          />
+          <div class="image-overlay">
+            <div class="image-number">04</div>
+            <div class="image-title">Tellus</div>
+            <div class="image-subtitle">doors</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./assets/img/image5.webp"
+            alt="Modern windows with natural light"
+          />
+          <div class="image-overlay">
+            <div class="image-number">05</div>
+            <div class="image-title">Hélios</div>
+            <div class="image-subtitle">windows</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img
+            src="./assets/img/image6.webp"
+            alt="Modern windows with natural light"
+          />
+          <div class="image-overlay">
+            <div class="image-number">06</div>
+            <div class="image-title">Hélios</div>
+            <div class="image-subtitle">windows</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img
+            src="./assets/img/image7.webp"
+            alt="Modern windows with natural light"
+          />
+          <div class="image-overlay">
+            <div class="image-number">07</div>
+            <div class="image-title">Hélios</div>
+            <div class="image-subtitle">windows</div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
 
     <!-- socials -->
     <section class="socials-section">
@@ -407,6 +490,36 @@
     <div class="contact-wrapper">
       <div class="contact-left">
         <h2 style="font-size: 2em">Get in touch</h2>
+        <div class="mapswrapper" se>
+          <iframe
+            width="500"
+            height="300"
+            loading="lazy"
+            allowfullscreen
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=3190%20HW-160%2C%20Suite%20F%2C%20Pahrump%2C%20Nevada%2089048%2C%20United%20States&zoom=10&maptype=roadmap"
+          ></iframe
+          ><a href="https://www.lawod.com/blox-fruits-codes/"
+            >blox fruits codes</a
+          ><style>
+            .mapswrapper {
+              background: #fff;
+              position: relative;
+            }
+            .mapswrapper iframe {
+              border: 0;
+              position: relative;
+              z-index: 2;
+            }
+            .mapswrapper a {
+              color: rgba(0, 0, 0, 0);
+              position: absolute;
+              left: 0;
+              top: 0;
+              z-index: 0;
+              margin-bottom: 20px;
+            }
+          </style>
+        </div>
 
         <div class="contact-info">
           <i class="fas fa-map-marker-alt"></i>
@@ -423,7 +536,6 @@
             Phone: (206) 919-6886
           </div>
         </div>
-
         <div class="social-icons">
           <a
             href="https://wa.me/12069196886"
@@ -485,7 +597,9 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/swiper.js"></script>
     <script>
       AOS.init(); // Initialize AOS
     </script>

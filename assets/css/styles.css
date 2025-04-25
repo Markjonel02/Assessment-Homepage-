@@ -25,12 +25,18 @@ body {
 .sidebar {
   width: 30%;
   background-color: rgb(255, 255, 255);
-  color: white;
+  color: rgb(13, 13, 13);
   padding: 20px;
   position: relative;
   z-index: 10;
 }
-
+.hero img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.2;
+}
 .logo {
   width: 200px; /* Set container size */
   height: auto;
@@ -57,6 +63,7 @@ body {
   display: flex;
   justify-content: space-between;
   z-index: 10;
+
 }
 
 .menu {
@@ -86,11 +93,11 @@ body {
   font-weight: normal;
   margin-bottom: 20px;
   line-height: 1;
-  color: #0066ffff;
+  color: rgb(3, 3, 3);
 }
 
 .hero p {
-  color:rgb(57, 134, 251);
+  color: rgb(117, 117, 117);
   margin-bottom: 30px;
   max-width: 300px;
 }
@@ -351,7 +358,7 @@ button.learn-more .button-text {
   bottom: 0;
   padding: 0.75rem 0;
   margin: 0 0 0 1.85rem;
-  color: #282936;
+  color: #0066ffff;
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
@@ -366,10 +373,9 @@ button:hover .circle .icon.arrow {
   background: #fff;
   transform: translate(1rem, 0);
 }
-  button:hover .button-text {
+button:hover .button-text {
   color: #fff;
 }
-
 
 /* mediaqueries */
 
@@ -457,79 +463,78 @@ button:hover .circle .icon.arrow {
     font-size: 24px;
   }
 
+  button.learn-more {
+    width: 12rem;
+    height: auto;
+  }
 
-button.learn-more {
-  width: 12rem;
-  height: auto;
-}
+  button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+  }
 
-button.learn-more .circle {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: relative;
-  display: block;
-  margin: 0;
-  width: 3rem;
-  height: 3rem;
-  background: #282936;
-  border-radius: 1.625rem;
-}
+  button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+  }
 
-button.learn-more .circle .icon {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  background: #fff;
-}
+  button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
 
-button.learn-more .circle .icon.arrow {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  left: 0.625rem;
-  width: 1.125rem;
-  height: 0.125rem;
-  background: none;
-}
+  button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+  }
 
-button.learn-more .circle .icon.arrow::before {
-  position: absolute;
-  content: "";
-  top: -0.29rem;
-  right: 0.0625rem;
-  width: 0.625rem;
-  height: 0.625rem;
-  border-top: 0.125rem solid #fff;
-  border-right: 0.125rem solid #fff;
-  transform: rotate(45deg);
-}
+  button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+  }
 
-button.learn-more .button-text {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 0.75rem 0;
-  margin: 0 0 0 1.85rem;
-  color: #282936;
-  font-weight: 700;
-  line-height: 1.6;
-  text-align: center;
-  text-transform: uppercase;
-}
+  button:hover .circle {
+    width: 100%;
+  }
 
-button:hover .circle {
-  width: 100%;
-}
-
-button:hover .circle .icon.arrow {
-  background: #fff;
-  transform: translate(1rem, 0);
-}
+  button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+  }
   button:hover .button-text {
-  color: #fff;
-}
+    color: #fff;
+  }
 
   .image-container:hover img {
     transform: none !important;
@@ -540,4 +545,3 @@ button:hover .circle .icon.arrow {
     opacity: 1; /* Prevent flicker */
   }
 }
-

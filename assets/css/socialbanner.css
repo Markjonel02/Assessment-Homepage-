@@ -1,72 +1,72 @@
+.socials-section {
+  width: 100%;
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f0f8ffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
 
-    .socials-section {
-      width: 100%;
-      text-align: center;
-      padding: 4rem 2rem;
-      background-color: #131212;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
-    }
+.socials-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
 
-    .socials-section h2 {
-      font-size: 2.2rem;
-      margin-bottom: 2rem;
-      color: #333;
-    }
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
 
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
+.social-media {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
 
-    .social-media {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      background-color: #f1f1f1;
-      transition: all 0.3s ease;
-      text-decoration: none;
-    }
+.social-media svg {
+  width: 36px;
+  height: 36px;
+  fill: #555;
+  transition: fill 0.3s ease;
+}
 
-    .social-media svg {
-      width: 36px;
-      height: 36px;
-      fill: #555;
-      transition: fill 0.3s ease;
-    }
+.social-media:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
 
-    .social-media:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    }
+.social-media.facebook:hover svg {
+  fill: #3b5998;
+}
 
-    .social-media.facebook:hover svg {
-      fill: #3b5998;
-    }
+.social-media.yelp:hover svg {
+  fill: #d32323;
+}
 
-    .social-media.yelp:hover svg {
-      fill: #d32323;
-    }
+.social-media.instagram:hover svg {
+  fill: #e4405f;
+}
 
-    .social-media.instagram:hover svg {
-      fill: #e4405f;
-    }
+.social-media.linkedin:hover svg {
+  fill: #0077b5;
+}
 
-    .social-media.linkedin:hover svg {
-      fill: #0077b5;
-    }
+@media (max-width: 500px) {
+  .social-media {
+    width: 60px;
+    height: 60px;
+  }
 
-    @media (max-width: 500px) {
-      .social-media {
-        width: 60px;
-        height: 60px;
-      }
-
-      .social-media svg {
-        width: 28px;
-        height: 28px;
-      }}
+  .social-media svg {
+    width: 28px;
+    height: 28px;
+  }
+}
