@@ -1,9 +1,10 @@
 .socials-section {
   width: 100%;
   text-align: center;
-  padding: 4rem 2rem;
-  background-color: #f0f8ffff;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  padding: 2rem 2rem;
+  /*   background: linear-gradient(135deg, #383839, #161618); */
+  /*   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07); */
+  margin-top: 50px;
 }
 
 .socials-section h2 {
